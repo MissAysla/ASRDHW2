@@ -1,0 +1,66 @@
+/* Default Styling */
+body {
+    background-color: #dedede;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+/* Default Div Styling */
+div {
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* 🟠 MEDIA QUERY #1: Tablet View (≥772px) */
+@media (min-width: 772px) {
+    div {
+        width: 45vw;  /* 45% of viewport width */
+        display: inline-block;
+        text-align: center;
+    }
+
+    div img {
+        max-height: 30vh; /* 30% of viewport height */
+        width: auto;
+    }
+}
+
+/* 🔵 MEDIA QUERY #2: Large Screen View (≥998px) */
+@media (min-width: 998px) {
+    div {
+        width: 30vw; /* 30% of viewport width */
+    }
+}
